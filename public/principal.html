@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alura Typer</title>
+
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="center">Alura Typer</h1>
+        <p class="phrase center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil at, soluta quisquam mollitia quia vel vitae cum. itaque quod provident nam iure deleniti!</p>
+        
+        <ul class="informations center">
+            <li>
+                <i class="small material-icons icones">description</i>
+                <span class="number-of-words"></span>words
+            </li>
+
+            <li>
+                <i class="small material-icons icones">query_builder</i>
+                <span id="remaining-time">5</span>seconds
+            </li>
+        </ul>
+        
+        <textarea class="typing-field" cols="30" rows="10"></textarea>
+        <a id="restart-button" class="btn-floating btn-large waves-effect waves-light red">
+            <i class="material-icons">restore</i>
+        </a>
+        <a id="score-board-button" class="btn-floating btn-large waves-effect waves-light green">
+            <i class="material-icons">assignment</i>
+        </a>
+        
+        <ul class="center">
+            <li> <span id="counter-characters">0</span> Characters</li>
+            <li> <span id="counter-words">0</span> Words</li>
+        </ul>
+
+        <section class="score-board">
+            <h3 class="center">Score Board</h3>
+
+            <table class="centered bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Nº Words</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

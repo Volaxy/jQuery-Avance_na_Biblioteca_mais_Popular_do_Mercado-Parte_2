@@ -1,0 +1,32 @@
+.phrase {
+    font-size: 20px;
+    text-align: left;
+}
+
+.typing-field {
+    height: 150px;
+
+    font-size: 20px;
+
+    outline: none;
+}
+
+.typing-field--disabled {
+    background-color: lightgray;
+}
+
+.typing-field--green-border {
+    border: 3px solid green;
+}
+
+.typing-field--red-border {
+    border: 3px solid red;
+}
+
+.icones {
+    vertical-align: middle;
+}
+
+.score-board {
+    display: none;
+}
