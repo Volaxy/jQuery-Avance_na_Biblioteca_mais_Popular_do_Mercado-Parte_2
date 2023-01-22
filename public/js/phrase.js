@@ -1,7 +1,19 @@
 $("#toggle-phrase-button").click(randomPhrase);
 
 function randomPhrase() {
-    $.get("http://localhost:3000/frases", toggleRandomPhrase);
+    $("#spinner").show();
+
+    $.get("http://localhost:3000/frases", toggleRandomPhrase)
+        .fail(function() {
+            $("#error").show();
+            
+            setTimeout(function() {
+                $("#error").toggle();
+            }, 1500);
+        })
+        .always(function() { // The function always will be executed
+            $("#spinner").hide();
+        });
 }
 
 function toggleRandomPhrase(data) {

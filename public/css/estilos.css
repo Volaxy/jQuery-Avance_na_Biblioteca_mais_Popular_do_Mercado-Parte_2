@@ -30,3 +30,13 @@
 .score-board {
     display: none;
 }
+
+#error {
+    display: none;
+
+    color: red;
+}
+
+#spinner {
+    display: none;
+}

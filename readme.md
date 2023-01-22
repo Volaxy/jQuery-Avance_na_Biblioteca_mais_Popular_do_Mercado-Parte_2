@@ -30,3 +30,7 @@ URL do curso -> [jQuery - Avançe na Biblioteca mais Popular do Mercado - Parte 
 
 ## 02 - Buscando Frases via Ajax &#x1F516;
 * Enviar um requisição com `$.get()`.
+
+## 03 - Tratando Erros e Melhorando a Experiência &#x1F516;
+* Lidar com requisições AJAX que falharam com `fail()`.
+* 
