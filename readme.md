@@ -33,4 +33,6 @@ URL do curso -> [jQuery - Avançe na Biblioteca mais Popular do Mercado - Parte 
 
 ## 03 - Tratando Erros e Melhorando a Experiência &#x1F516;
 * Lidar com requisições AJAX que falharam com `fail()`.
-* 
+
+## 04 - Enviando Dados com AJAX &#x1F516;
+* Enviar dados através da requisição **GET**.

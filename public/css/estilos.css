@@ -40,3 +40,7 @@
 #spinner {
     display: none;
 }
+
+#phrase-id {
+    width: 50px;
+}
