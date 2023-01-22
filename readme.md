@@ -10,6 +10,9 @@ URL do curso -> [jQuery - Avançe na Biblioteca mais Popular do Mercado - Parte 
 
 ![jQuery - Avançe na Biblioteca mais Popular do Mercado - Parte 2](https://www.alura.com.br/assets/api/share/curso-jquery-a-biblioteca-do-mercado-parte-2.png)
 
+## Links Úteis &#x1F517;
+* [Slick](https://kenwheeler.github.io/slick/) - Biblioteca usada no jQuery para animações de carrossel.
+
 ***
 
 ## 01 - Animações com jQuery &#x1F516;
@@ -30,3 +33,6 @@ URL do curso -> [jQuery - Avançe na Biblioteca mais Popular do Mercado - Parte 
 
 ## 05 - Enviando Dados com POST &#x1F516;
 * Enviar requisições **POST** com `$.post()`.
+
+## 06 - Plugins do jQuery &#x1F516;
+* Utilizar extensões do jQuery.
