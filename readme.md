@@ -10,15 +10,6 @@ URL do curso -> [jQuery - Avançe na Biblioteca mais Popular do Mercado - Parte 
 
 ![jQuery - Avançe na Biblioteca mais Popular do Mercado - Parte 2](https://www.alura.com.br/assets/api/share/curso-jquery-a-biblioteca-do-mercado-parte-2.png)
 
-## Links Úteis &#x1F517;
-*
-
-## Siglas &#x1F5FA;
-*
-
-## Atalhos &#x2328;
-*
-
 ***
 
 ## 01 - Animações com jQuery &#x1F516;
@@ -36,3 +27,6 @@ URL do curso -> [jQuery - Avançe na Biblioteca mais Popular do Mercado - Parte 
 
 ## 04 - Enviando Dados com AJAX &#x1F516;
 * Enviar dados através da requisição **GET**.
+
+## 05 - Enviando Dados com POST &#x1F516;
+* Enviar requisições **POST** com `$.post()`.

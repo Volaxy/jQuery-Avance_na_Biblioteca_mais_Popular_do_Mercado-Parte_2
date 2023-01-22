@@ -10,6 +10,7 @@ $(function() {
     $("#restart-button").click(restartGame);
 
     verifyText();
+    updateScoreBoard();
 });
 
 function verifyText() {
@@ -113,6 +114,41 @@ function scrollScoreBoard() {
     $("html").animate({
         scrollTop: `${scoreBoardPosition}px`
     }, 1000);
+}
+
+$("#sync-button").click(syncScoreBoard);
+
+function syncScoreBoard() {
+    const scoreBoard = [];
+    const $lines = $("tbody tr");
+
+    $lines.each(function() {
+        const user = $(this).find("td:nth-child(1)").text();
+        const words = $(this).find("td:nth-child(2)").text();
+
+        const score = {
+            usuario: user,
+            pontos: words
+        };
+
+        scoreBoard.push(score);
+    });
+
+    const data = { placar: scoreBoard }
+    $.post("http://localhost:3000/placar", data, function() {
+        console.log("Data saved");
+    });
+}
+
+function updateScoreBoard() {
+    $.get("http://localhost:3000/placar", function(data) {
+        $(data).each(function() {
+            const $line = createLine(this.usuario, this.pontos);
+            $line.find(".remove-button").click(removeLine);
+            
+            $("tbody").append($line);
+        });
+    });
 }
 
 function createLine(user, wordsCount) {
