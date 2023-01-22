@@ -27,3 +27,6 @@ URL do curso -> [jQuery - Avançe na Biblioteca mais Popular do Mercado - Parte 
 * Parar a animação atual com `stop()` e iniciar a outra animação.
 * Pegar a distância de um elemento na tela com `offset()`.
 * Animar um elemento com `animate()`.
+
+## 02 - Buscando Frases via Ajax &#x1F516;
+* Enviar um requisição com `$.get()`.

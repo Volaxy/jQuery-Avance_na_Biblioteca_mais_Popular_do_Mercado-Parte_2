@@ -1,4 +1,4 @@
-const initialTime = $("#remaining-time").text();
+let initialTime = $("#remaining-time").text();
 
 const $typingField = $(".typing-field");
 
@@ -13,8 +13,8 @@ $(function() {
 });
 
 function verifyText() {
-    const phrase = $(".phrase").text();
     $typingField.on("input", function() {
+        const phrase = $(".phrase").text();
         const typingValue = $typingField.val();
         
         if(phrase.startsWith(typingValue)) {
@@ -37,6 +37,11 @@ function updatePhraseLength() {
     $phraseLength.text(wordsNumbers);
 }
 
+function updateInitialTime(time) {
+    $("#remaining-time").text(time);
+    initialTime = time;
+}
+
 
 function initializeCounters() {
     $typingField.on("input", function() {
@@ -54,9 +59,8 @@ function initializeCounters() {
 
 
 function initializeTimer() {
-    let remainingTime = $("#remaining-time").text();
-    
     $typingField.one("focus", function() {
+        let remainingTime = $("#remaining-time").text();
         const timeCounter = setInterval(function() {
             remainingTime--;
             
